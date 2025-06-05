@@ -5,6 +5,8 @@ import cors from "cors"
 import {connectDB} from "./config/connectDB.js"
 
 import {UserRoutes} from "./routes/UserRoutes.js";
+import {SearchRoutes} from "./routes/SearchRoutes.js";
+
 
 
 const port = process.env.PORT || 8080;
@@ -21,6 +23,9 @@ app.use(cors());
 
 
 app.use("/" , UserRoutes);
+
+app.use("/" , SearchRoutes);
+
 
 
 app.get("/" ,(req,res)=>{

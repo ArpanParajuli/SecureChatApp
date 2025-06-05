@@ -10,6 +10,45 @@ http://localhost:5000/login/
 http://localhost:5000/register/
 
 {
-    "username" : "check1234",
-    "password" : "check1234"
+    "username" : "madan1234",
+    "password" : "madan1234"
 }
+
+{
+    "username" : "roshan1234",
+    "password" : "roshan1234"
+}
+
+
+http://localhost:5000/search-user
+
+{
+    "username" : "madan1234"
+}
+
+{
+    "username" : "roshan1234"
+}
+
+
+http://localhost:5000/sendreq-user
+{
+    "OwnUsername" : "roshan1234",
+    "toUserName" : "madan1234"
+}
+
+
+http://localhost:5000/acceptreq-user
+{
+    "OwnUsername" : "madan1234",
+    "ofUserName" : "roshan1234"
+}
+
+
+
+
+
+
+
+
+
